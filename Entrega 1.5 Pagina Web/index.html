@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"><title> Entrega 1.5 </title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel='stylesheet' type="text/css" media='only screen and (min-width: 530px) and (min-device-width: 481px)'	href="css/wide.css" />
+	<link rel='stylesheet' type="text/css" media='only screen and (max-width: 480px)' href='css/smartphone.css' />
+
+	<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 480px)" href="css/smartphone.css" />
+	<!-- new androids -->
+	<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:0.75)" href="css/smartphone.css" />
+	<link rel="stylesheet" href="css/smartphone.css" media="handheld" type="text/css" />
+	<!-- tell iPhone not to shrink mobile website -->
+	<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+	<div id="main">
+		<h1> Vídeo explicativo </h1>
+		<div id="nav">
+			<ul id="menu">
+				<li><a href="index.html"> Vídeo </a></li>
+				<li><a href="map.html"> Mapa </a></li>
+			</ul>
+		</div>
+		<section id="centro"> 
+			<div id="video" align="center">
+				<video src = "images/video.ogv" controls preload></video>
+			</div>
+			<div id="texto_explicativo">
+				<h2> Texto explicativo </h2>
+				La página web consta de dos partes: La barra de navegación y la página principal.</br>
+				En primer lugar, al acceder al servidor, veremos la página principal, o index, que consta de un video explicativo y esta descripción. </br>
+				Por otra parte, si accedemos al link "Mapa", que aparece en la barra de navegación, observaremos un mapa en el que se muestra la posición actual desde la que se esta accediendo a la web (con un marcador de color rojo), y la última posición guardada (con un marcador verde), que es, por defecto, la localización que teníamos la última vez que accedimos a la pagina web. Además, se muestra la distancia que hay entre los dos puntos, la ruta en coche para cubrir abos puntos, y la distancia en coche. </br> Por otra parte, se puede modificar la posición guardada escribiendo las coordenadas en los cuadros de texto "Longitud Guardada" y "Latitud Guardada", y haciendo click en el boton "Guardar Coordenadas". Así, la página web nos mostraria la nueva localización guardada, la nueva distancia entre el punto guardado y nuestra posición, y la ruta en coche entre ambos puntos. </br></br>
+
+				Para la codificación de la página Web hemos utilizado HTML5 junto con CSS3, lo que nos ha permitido diseñar una interfaz enfocada a dispositivos con pantalla grande (PC y TV), y otra distinta para dispositivos móviles. </br>
+				Como se puede ver, en la interfaz de pantallas anchas, la barra de navegación se sitúa a la izquierda. Por otra parte, en la interfaz móvil, la barra de navegación se encuentra en la parte superior de la pantalla, lo que es mucho más comodo para dispositivos con una pantalla más pequeña. Además, todos los objetos de la página se encuentran en columna, facilitando la lectura y evitando tener que hacer zoom en la página. </br>
+				En ambos casos se ha aprovechado el "iframe" de HTML5, lo que nos permite ejecutar scripts en un "sandbox" del navegador, e incrementa la seguridad de la navegación
+			</div>
+		</section>
+	</div>
+	<footer> Autores: </br> Enrique Garcia Gutierrez <br/> Sergio Ruiz Peña <br/></footer>
+</body>
+</html>

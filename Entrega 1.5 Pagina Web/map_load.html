@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=false"></script>
+	<script type="text/javascript" src="js/coordenadas.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel='stylesheet' type="text/css" media='only screen and (min-width: 530px) and (min-device-width: 481px)'	href="css/wide.css" />
+	<link rel='stylesheet' type="text/css" media='only screen and (max-width: 480px)' href='css/smartphone.css' />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+	<section id="contentmapa">
+	<div id="map_canvas"></div>
+	<div id="coords">
+		<form class="formularios" id="posiciones">
+			<span id="posActual">
+				<ul>
+					<li> Longitud Actual</li>
+					<li><input type="text" name="longActual" size="20" id="longActual" readonly></input></li>
+					<li> Latitud Actual </li>
+					<li><input type="text" name="latActual" size="20" id="latActual" readonly></input></li>
+					<li> Distancia en coche (km.) </li>
+					<li><input type="text" name="distCoche" size="20" id="distCoche" readonly></input></li>
+				</ul>
+			</span>
+			<span id="posGuardada">
+				<ul>
+					<li> Longitud Guardada</li>
+					<li><input type="text" name="longGuardada" size="20" id="longGuardada"></input></li>
+					<li> Latitud Guardada </li>
+					<li><input type="text" name="latGuardada" size="20" id="latGuardada"></input></li>
+					<li> Distancia en linea recta (km) </li>
+					<li><input type="text" name="distRecta" size="20" id="distRecta" readonly></input></li>
+				</ul>
+			</span>
+			<input type="button" name="Guardar" value="Guardar Coordenadas" id="enviar"></input>
+		</form>
+	</div>
+</section>
+</body>
+</html>
